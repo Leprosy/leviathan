@@ -39,6 +39,8 @@ console.assert(G.size() == 4);
 console.assert(true === G.has(E1));
 G.forEach(item => console.log(item.say()));
 console.log(G.findTags('uno'));
+console.log(G.findTags('uno', false)); // list of entities without the tags
+
 console.log('Test ended');
 
 /* console.assert(E.hasComponents("uno"))

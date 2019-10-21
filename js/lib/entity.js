@@ -70,6 +70,7 @@ export class Entity {
   }
 
   addTags(tag = '') {
+    // TODO: blank tags?
     tag = Utils.arrayfy(tag);
     tag.forEach(item => this.tags.add(item));
   }
@@ -128,12 +129,12 @@ export class EntityGroup {
     return !ent.some(item => !this.entities.has(item));
   }
 
-  findTags(tag) {
+  findTags(tag, hasTag = true) {
     tag = Utils.arrayfy(tag);
     let result = new EntityGroup();
 
     this.entities.forEach(item => {
-      if (item.hasTags(tag)) {
+      if (item.hasTags(tag) === hasTag) {
         result.add(item);
       }
     });
