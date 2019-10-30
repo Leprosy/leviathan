@@ -1,0 +1,27 @@
+{
+  "name": "leviathan",
+  "version": "1.0.0",
+  "description": "Entity-Component library",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Leprosy/leviathan.git"
+  },
+  "keywords": [
+    "entity",
+    "component"
+  ],
+  "author": "Miguel Rojas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Leprosy/leviathan/issues"
+  },
+  "homepage": "https://github.com/Leprosy/leviathan#readme",
+  "devDependencies": {
+    "jasmine": "^3.5.0",
+    "jasmine-es6": "^0.4.3"
+  }
+}

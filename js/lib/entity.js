@@ -150,14 +150,13 @@ export class EntityGroup {
 let comps = {
   test: {
     init: function() {
-      console.log('test component init // context =>', this);
+      //console.log('test component init // context =>', this);
     },
     remove: function() {
-      console.log('test component remove');
+      //console.log('test component remove');
     },
-    name:
-      'This should be not taklen in account, name already is a property of the main obj',
-    val: 'Super',
+    name: 'TestComponent',
+    val: 'Value',
     say: function() {
       return this.name + ': Hello world';
     },
